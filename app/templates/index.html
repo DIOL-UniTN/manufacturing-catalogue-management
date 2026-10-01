@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div id="results" class="list-group mb-4"></div>
+
+    <div class="d-flex justify-content-end">
+      <button class="btn btn-success me-2" id="okBtn" disabled>OK</button>
+      <button class="btn btn-secondary" id="createNewBtn" disabled>Create New</button>
+    </div>
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+{% endblock %}

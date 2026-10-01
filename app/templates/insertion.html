@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+<div class="container">
+    <h2 class="mb-4">Inserimento nuovo materiale</h2>
+
+    <!-- Codice materiale
+    <div class="mb-4">
+      <label for="materialCode" class="form-label">Codice materiale suggerito</label>
+      <input type="text" class="form-control" id="materialCode" value="MAT-00123">
+    </div> -->
+
+    <!-- Descrizioni italiane -->
+    <div class="mb-4">
+      <label class="form-label">Descrizione breve (Italiano)</label>
+      <div id="descIt" class="list-group">
+        <!-- {% for i in range(1, 6) %}
+        <input type="text" class="list-group-item editable form-control mb-2" value="Descrizione IT {{ i }}" readonly>
+        {% endfor %} -->
+      </div>
+    </div>
+
+    <!-- Descrizioni inglesi -->
+    <div class="mb-4">
+      <label class="form-label">Descrizione breve (Inglese)</label>
+      <div id="descEn" class="list-group">
+        <!-- {% for i in range(1, 6) %}
+        <input type="text" class="list-group-item editable form-control mb-2" value="Description EN {{ i }}" readonly>
+        {% endfor %} -->
+      </div>
+    </div>
+
+    <!-- Pulsanti finali -->
+    <div class="d-flex gap-3">
+      <button id="createBtn" class="btn btn-success" disabled>Submit</button>
+      <button id="cancelBtn" class="btn btn-secondary">Cancel</button>
+    </div>
+  </div>
+</div>
+
+<script src="{{ url_for('static', filename='insertion_script.js') }}"></script>
+
+{% endblock %}

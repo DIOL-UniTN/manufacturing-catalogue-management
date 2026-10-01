@@ -1,0 +1,19 @@
+.result-item {
+  cursor: pointer;
+  user-select: text;
+}
+
+.result-item.active {
+  background-color: #0d6efd;
+  color: white;
+}
+
+.editable.selected {
+    border: 2px solid #0d6efd;
+    background-color: #e7f1ff;
+}
+
+.btn-model-selected {
+  border: 2px solid #0d6efd !important; /* blu Bootstrap */
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25); /* leggero alone */
+}
